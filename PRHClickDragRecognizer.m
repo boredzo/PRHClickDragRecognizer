@@ -51,6 +51,7 @@ static bool PRHDistanceFromPointToPointExceedsDistances(NSPoint pointA, NSPoint 
 
 			if (dragged) {
 				_inDrag = true;
+				self.dragStartPoint = _mouseStartPoint;
 				[self.dragTarget dragStarted:theEvent];
 				handled = true;
 			}

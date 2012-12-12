@@ -7,6 +7,8 @@
 @property(weak) id <PRHClickTarget> clickTarget;
 @property(weak) id <PRHDragTarget> dragTarget;
 
+@property NSPoint dragStartPoint;
+
 @end
 
 @protocol PRHClickTarget <NSObject>
